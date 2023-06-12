@@ -18,14 +18,14 @@ class RegisterSerializer(serializers.ModelSerializer):
         validators=[
             validate_password
         ],
-        style={
+        style = {
             'input_type':'password',
         }
     )
     password2 = serializers.CharField(
         required=True,
         write_only=True,
-        style={
+        style = {
             'input_type':'password',
         }
     )
