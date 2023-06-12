@@ -1,4 +1,5 @@
 from decouple import config
+from .base import BASE_DIR
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -17,3 +18,5 @@ DATABASES = {
         "ATOMIC_REQUESTS": True,
     }
 }
+
+STATIC_ROOT = BASE_DIR / 'static'

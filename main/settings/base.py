@@ -202,4 +202,10 @@ CORS_ALLOW_METHODS = (
     "PATCH",
     "POST",
     "PUT",
-)   
+)
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_EXPOSE_HEADERS = (
+    'Access-Control-Allow-Origin: *',
+)
